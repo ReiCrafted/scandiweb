@@ -1,0 +1,28 @@
+
+create table dvds (
+	id int(5) not null PRIMARY KEY AUTO_INCREMENT,
+	sku varchar(20) not null,
+	name varchar(20) not null,
+    price float(10, 2) not null,
+    sizeMb int(5)
+);
+
+create table furnitures (
+	id int(5) not null PRIMARY KEY AUTO_INCREMENT,
+	sku varchar(20) not null,
+	name varchar(20) not null,
+    price float(10, 2) not null,
+    heightCm float(5, 3),
+    widthCm float(5, 3),
+    lengthCm float(5, 3)
+);
+
+create table books (
+	id int(5) not null PRIMARY KEY AUTO_INCREMENT,
+	sku varchar(20) not null,
+	name varchar(20) not null,
+    price float(10, 2) not null,
+    weightKg float(5, 3)
+);
+
+insert into dvds (sku, name, price, type, sizeMb) VALUES ('LDL1203010', 'Adata CD 2012', 'dvd', 2024);
